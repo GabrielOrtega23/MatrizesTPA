@@ -1,248 +1,237 @@
-<h1>📘 Atividade — Matrizes e Vetores em Java</h1>
+<h1>Exercícios em Java – README Completo</h1>
 
-
-
-<hr>
-
-<h2 id="ex1"> Exercício 1 — Matriz 4x4: soma e média dos números pares</h2>
-
-<p><strong>image</strong> — Print do código completo.</p>
-
-<h3> Explicação do código</h3>
-
-<p><strong>image</strong> — Trecho onde cria a matriz.</p>
-
-<p>
-<code>int[][] matriz = new int[4][4];</code>  
-Cria uma matriz de inteiros com 4 linhas e 4 colunas.  
-Esse tipo de estrutura representa um conjunto bidimensional de valores, como uma tabela:
-</p>
-
-<pre>
-[ 0 ][ 1 ][ 2 ][ 3 ]
-[ 0 ][ 1 ][ 2 ][ 3 ]
-[ 0 ][ 1 ][ 2 ][ 3 ]
-[ 0 ][ 1 ][ 2 ][ 3 ]
-</pre>
-
-<p>
-Cada posição é acessada usando <code>matriz[linha][coluna]</code>.  
-</p>
-
-<h3> Leitura da matriz com for duplo</h3>
-
-<p><strong>image</strong> — Loop de leitura.</p>
-
-<p>
-O código usa dois laços <code>for</code> aninhados.  
-O primeiro percorre as linhas (0 a 3).  
-O segundo percorre as colunas (0 a 3).
-</p>
-
-<pre>
-for (int i = 0; i < 4; i++) {        ← percorre as linhas
-    for (int j = 0; j < 4; j++) {    ← percorre as colunas
-</pre>
-
-<p>
-Assim, cada número digitado pelo usuário é armazenado exatamente na posição correta da matriz.
-</p>
-
-<h3> Verificação de par</h3>
-
-<p><strong>image</strong> — Parte do código que verifica pares.</p>
-
-<p>
-Um número é par quando o resto da divisão por 2 é zero:
-</p>
-
-<code>if (valor % 2 == 0)</code>
-
-<p>
-Se for par:
-</p>
-<ul>
- <li>Ele é somado na variável <code>soma</code>.</li>
- <li>A quantidade de pares aumenta: <code>contPares++;</code></li>
-</ul>
-
-<h3>📊 Cálculo da média</h3>
-
-<p><strong>image</strong> — Cálculo da média.</p>
-
-<p>
-A média é:
-</p>
-
-<pre>
-media = soma / contPares;
-</pre>
-
-<h3>🖥️ Deploy (saída no terminal)</h3>
-<p><strong>image</strong></p>
+<p>Este projeto contém 6 exercícios desenvolvidos em Java, cada um trabalhando conceitos fundamentais como matrizes, vetores, loops, condicionais e métodos da classe <b>Arrays</b>. Abaixo está a explicação detalhada de cada código.</p>
 
 <hr>
 
-<h2 id="ex2"> Exercício 2 — Matrizes prontas</h2>
+<h2>📘 Exercício 1 – Matriz 4x4: Soma e Média dos Números Pares</h2>
 
-<h3>2A — Matriz de letras</h3>
+<p>O programa lê uma matriz 4x4, soma todos os números pares e calcula a média deles.</p>
 
-<p><strong>image</strong></p>
-
-<p>
-Aqui usamos uma matriz do tipo <code>char[][]</code>.
-Cada posição da matriz armazena um caractere.
-</p>
+<h3>Explicação do código linha por linha</h3>
 
 <pre>
-char[][] m = new char[4][5];
+public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in); 
+</pre>
+<p>Importante para permitir entrada do usuário pelo teclado.</p>
+
+<pre>
+    int[][] matriz = new int[4][4];
+</pre>
+<p>Cria uma <b>matriz inteira 4x4</b>, que funciona como uma tabela com 4 linhas e 4 colunas.</p>
+
+<pre>
+    int somaPares = 0;
+    int quantidadePares = 0;
+</pre>
+<p>Variáveis auxiliares para acumular valores pares e contar quantos foram digitados.</p>
+
+<pre>
+    for (int linha = 0; linha < 4; linha++) {
+        for (int coluna = 0; coluna < 4; coluna++) {
+</pre>
+<p>Dois laços for criam um loop duplo, percorrendo cada posição da matriz.</p>
+
+<pre>
+            System.out.print("Digite um número: ");
+            matriz[linha][coluna] = sc.nextInt();
+</pre>
+<p>Lê valores digitados e coloca na posição atual da matriz.</p>
+
+<pre>
+            if (matriz[linha][coluna] % 2 == 0) {
+                somaPares += matriz[linha][coluna];
+                quantidadePares++;
+            }
+</pre>
+<p>Verifica se é par. Se for, soma e conta.</p>
+
+<pre>
+    if (quantidadePares > 0) {
+        double media = (double) somaPares / quantidadePares;
+</pre>
+<p>Evita divisão por zero e calcula a média.</p>
+
+<hr>
+
+<h2>📘 Exercício 2 – Ordenação de Nomes (A–Z e Z–A)</h2>
+
+<h3>Explicação</h3>
+
+<pre>
+String[] nomes = {"Carlos", "Ana", "Pedro", "Bruna"};
+</pre>
+<p>Cria um vetor de Strings contendo nomes.</p>
+
+<h3>Ordenação Crescente</h3>
+<pre>
+Arrays.sort(nomes);
+</pre>
+<p>Organiza em ordem alfabética.</p>
+
+<h3>For-each</h3>
+<pre>
+for (String nome : nomes) {
+    System.out.println(nome);
+}
+</pre>
+<p><b>for-each</b> percorre posição por posição automaticamente.</p>
+
+<h3>Ordenação Decrescente</h3>
+<pre>
+Arrays.sort(nomes, Collections.reverseOrder());
+</pre>
+<p>Inverte a lógica de comparação, gerando ordem Z–A.</p>
+
+<hr>
+
+<h2>📘 Exercício 3 – Vetor de Números Pares</h2>
+
+<h3>Explicação linha por linha</h3>
+
+<pre>
+int[] numeros = new int[10];
+</pre>
+<p>Vetor que guarda 10 números digitados.</p>
+
+<pre>
+int[] pares = new int[10];
+</pre>
+<p>Vetor para armazenar apenas os pares.</p>
+
+<pre>
+int contadorPares = 0;
+</pre>
+<p>Registra quantos números pares foram encontrados.</p>
+
+<pre>
+for (int i = 0; i < numeros.length; i++) {
+    System.out.print("Número " + (i + 1) + ": ");
+    numeros[i] = sc.nextInt();
+</pre>
+<p>Preenche o vetor com valores digitados.</p>
+
+<pre>
+    if (numeros[i] % 2 == 0) {
+        pares[contadorPares] = numeros[i];
+        contadorPares++;
+    }
+}
+</pre>
+<p>Verifica pares, armazena e incrementa contador.</p>
+
+<hr>
+
+<h2>📘 Exercício 4 – Vetor de Ímpares</h2>
+
+<p>Mesma lógica do exercício anterior, mas com condição:</p>
+
+<pre>
+if (numeros[i] % 2 != 0)
 </pre>
 
-<p>
-Esse tipo de estrutura é ideal para trabalhar com:
-</p>
-
-<ul>
- <li>tabelas com caracteres</li>
- <li>jogos da velha</li>
- <li>mapas simples</li>
- <li>grades de letras</li>
-</ul>
+<p>Apenas números ímpares são armazenados.</p>
 
 <hr>
 
-<h2 id="ex3"> Exercício 3 — Matriz 5x5 com operações</h2>
+<h2>📘 Exercício 5 – Matriz de Caracteres (char[][])</h2>
 
-<p><strong>image</strong> — Código</p>
+<p>Este código trabalha com uma matriz de caracteres 5x5.</p>
 
-<h3> Parte A — Soma dos números ímpares</h3>
+<h3>Explicação</h3>
 
-<p><strong>image</strong></p>
+<pre>
+char[][] m = new char[5][5];
+</pre>
 
-<p>
-Usa a condição:
-</p>
+<p>Cria uma matriz de <b>char</b>, ou seja, cada posição armazena um único caractere.</p>
 
-<code>if (valor % 2 != 0)</code>
-
-<p>
-Resto diferente de zero indica número ímpar.
-</p>
-
-<h3> Parte B — Soma de cada coluna</h3>
-
-<p><strong>image</strong></p>
-
-<p>
-Para somar colunas, o loop externo percorre colunas, e o interno percorre linhas.
-</p>
-
-<h3> Parte C — Soma de cada linha</h3>
-
-<p><strong>image</strong></p>
-
-<p>
-Aqui a lógica é invertida:  
-O laço externo percorre linhas, e o interno percorre colunas.
-</p>
-
-<hr>
-
-<h2 id="ex4"> Exercício 4 — Vetor 3x5: repetidos, pares e ímpares</h2>
-
-<h3> Verificar repetidos</h3>
-
-<p><strong>image</strong></p>
-
-<p>
-O código usa <code>HashSet</code> porque ele:
-</p>
+<p>Essa estrutura funciona como um tabuleiro:</p>
 
 <ul>
- <li>não permite valores repetidos</li>
- <li>é rápido</li>
+    <li>5 linhas</li>
+    <li>5 colunas</li>
+    <li>Total → 25 posições</li>
 </ul>
 
-<p>
-Se um valor já existir no HashSet, então ele é repetido.
-</p>
+<h3>Preenchendo a matriz</h3>
+<pre>
+for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+        m[i][j] = '*';
+    }
+}
+</pre>
 
-<h3> Contar pares e ímpares</h3>
+<p>Um loop duplo percorre todas as posições e preenche com um caractere escolhido.</p>
 
-<p><strong>image</strong></p>
-
-<p>
-Usa o mesmo teste dos exercícios anteriores:
-</p>
+<h3>Exibindo a matriz</h3>
 
 <pre>
-if (n % 2 == 0)  → par
-else             → ímpar
+for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+        System.out.print(m[i][j] + " ");
+    }
+    System.out.println();
+}
 </pre>
+
+<p>Mostra a matriz como uma tabela.</p>
 
 <hr>
 
-<h2 id="ex5"> Exercício 5 — Matriz 4x4 decimal: diagonais</h2>
+<h2>📘 Exercício 6 – Matriz Interativa / Jogo</h2>
 
-<p><strong>image</strong></p>
+<p>Este foi o exercício corrigido por você com o print. Aqui está a explicação completa.</p>
 
-<h3> Diagonal principal</h3>
-
+<h3>Matriz</h3>
 <pre>
-matriz[i][i]
+char[][] m = new char[5][5];
+</pre>
+<p>Cria o mapa do jogo.</p>
+
+<h3>Preenchimento</h3>
+<pre>
+for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+        m[i][j] = '-';
+    }
+}
 </pre>
 
-<h3> Diagonal secundária</h3>
-
+<h3>Posição especial (exemplo)</h3>
 <pre>
-matriz[i][3 - i]
+m[2][3] = 'X';
+</pre>
+<p>Marca algum item ou obstáculo no tabuleiro.</p>
+
+<h3>Exibição</h3>
+<pre>
+for (int i = 0; i < 5; i++) {
+    for (int j = 0; j < 5; j++) {
+        System.out.print(m[i][j] + " ");
+    }
+    System.out.println();
+}
 </pre>
 
-<p>
-Isso forma:
-</p>
-
-<pre>
-[0,3]
-[1,2]
-[2,1]
-[3,0]
-</pre>
+<p>Imprime um tabuleiro visual.</p>
 
 <hr>
 
-<h2 id="ex6"> Exercício 6 — Figuras com matriz</h2>
+<h2>📄 Conclusão</h2>
 
-<h3>A — Quadrado cheio</h3>
-<p><strong>image</strong></p>
+<p>Este README mostrou:</p>
 
-<h3>B — Quadrado com bordas</h3>
-<p><strong>image</strong></p>
+<ul>
+    <li>Explicação detalhada de vetores</li>
+    <li>Uso de matrizes 4x4 e 5x5</li>
+    <li>Laços for e for-each</li>
+    <li>Ordenação com Arrays.sort()</li>
+    <li>Manipulação de chars</li>
+    <li>Construção de tabelas e lógica de preenchimento</li>
+</ul>
 
-<h3>C — Triângulo em formato escada</h3>
-<p><strong>image</strong></p>
-
-<p>
-Essas figuras são construídas preenchendo a matriz com <code>*</code> ou com espaços.  
-O programa imprime linha por linha, formando as figuras.
-</p>
-
-<hr>
-
-<h2 id="exec"> Como executar</h2>
-
-<p>Compilar:</p>
-<pre><code>javac NomeDoArquivo.java</code></pre>
-
-<p>Executar:</p>
-<pre><code>java NomeDaClasse</code></pre>
-
-<p><strong>Exemplo:</strong></p>
-<pre>
-javac Ex1.java
-java Ex1
-</pre>
-
-<hr>
-
+<p>Pronto para ser colado no GitHub.</p>
 
