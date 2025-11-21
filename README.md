@@ -30,6 +30,7 @@
 
 <p>Código:</p>
 
+<img width="197" height="202" alt="2a" src="https://github.com/user-attachments/assets/0ffe7c25-bf32-4fee-822d-b3459823703b" />
 
 
 <h3>Explicação</h3>
@@ -46,6 +47,7 @@
 
 <p>Código:</p>
 
+<img width="204" height="202" alt="2b" src="https://github.com/user-attachments/assets/5cc39842-c4c5-43e9-8809-c069a36b3914" />
 
 
 <h3>Explicação</h3>
@@ -57,6 +59,7 @@
 
 <p>Código:</p>
 
+<img width="206" height="193" alt="2c" src="https://github.com/user-attachments/assets/83f49069-c8cd-4ba1-92f2-a2f6318a0256" />
 
 
 <h3>Explicação</h3>
@@ -68,6 +71,7 @@
 
 <p>Código:</p>
 
+<img width="305" height="397" alt="3" src="https://github.com/user-attachments/assets/afeabc22-fbb3-4963-b2f2-7642c8f03faf" />
 
 
 <h3>Explicação</h3>
@@ -84,6 +88,7 @@
 
 <p>Código:</p>
 
+<img width="337" height="366" alt="4" src="https://github.com/user-attachments/assets/81d8a4eb-223c-4476-8bba-0b9984254fbd" />
 
 
 <h3>Explicação</h3>
@@ -100,6 +105,7 @@
 
 <p>Código:</p>
 
+<img width="311" height="322" alt="5" src="https://github.com/user-attachments/assets/87b6cfd3-d160-47a2-af12-9fb8fcbe6b99" />
 
 
 <h3>Explicação</h3>
@@ -114,6 +120,7 @@
 
 <h3>6A - Matriz inteira com *</h3>
 
+<img width="243" height="235" alt="6a" src="https://github.com/user-attachments/assets/4980df34-963d-4dc3-ae3b-f6e392d652b0" />
 
 
 <h3>Explicação</h3>
@@ -126,6 +133,7 @@
 
 <h3>6B - Borda de * e centro vazio</h3>
 
+<img width="281" height="278" alt="6b" src="https://github.com/user-attachments/assets/b0178131-76c5-4268-89d9-84fa04f6b6fa" />
 
 
 <h3>Explicação</h3>
@@ -138,6 +146,7 @@
 
 <h3>6C - Triângulo de *</h3>
 
+<img width="255" height="238" alt="6c" src="https://github.com/user-attachments/assets/3b783bda-4879-4b8d-98e7-bbc3106d94ec" />
 
 
 
