@@ -1,162 +1,201 @@
-<h1>Exercícios de Matrizes em Java</h1>
-
+<h1>README – Exercícios de Matrizes em Java</h1>
 
 <hr>
 
-<h2>Ex1 - Soma e Média dos Números Pares de uma Matriz 4x4</h2>
+<h2>Exercício 1 – Leitura de Matriz 4x4, Soma e Média dos Valores Pares</h2>
+<img width="301" height="320" alt="1" src="https://github.com/user-attachments/assets/587734ef-fd75-4b8c-b348-d319936236d9" />
 
-<p>Código:</p>
-<img width="301" height="320" alt="1" src="https://github.com/user-attachments/assets/56f838a6-faac-4a95-be6b-1df0bfb899d2" />
+<h3>Objetivo</h3>
+<p>Ler uma matriz 4x4 de números inteiros, calcular a soma de todos os números pares e encontrar a média desses valores.</p>
 
-
-
-<h3>Explicação </h3>
+<h3>Explicação das Linhas</h3>
 <ul>
-<li>Scanner sc = new Scanner(System.in): cria o leitor de entrada.</li>
-<li>int[][] matriz = new int[4][4]: cria a matriz 4x4.</li>
-<li>int somaPares = 0, qtdPares = 0: inicializa variáveis.</li>
-<li>Mensagem inicial solicitando os valores.</li>
-<li>Dois laços for percorrem linhas e colunas.</li>
-<li>matriz[i][j] = sc.nextInt(): lê cada valor.</li>
-<li>Se o valor for par, soma e incrementa o contador.</li>
-<li>Calculo da média usando operador ternário.</li>
-<li>Exibição dos resultados.</li>
-<li>Fechamento do Scanner.</li>
+    <li>Criação de um objeto responsável pela leitura dos dados do usuário.</li>
+    <li>Declaração de uma matriz 4x4 para armazenar valores inteiros.</li>
+    <li>Criação de variáveis usadas para acumular a soma dos pares e a quantidade encontrada.</li>
+    <li>Exibição de mensagem solicitando os valores ao usuário.</li>
+</ul>
+
+<h3>Explicando os loops for</h3>
+<ul>
+    <li>O loop externo percorre as 4 linhas da matriz.</li>
+    <li>O loop interno percorre as 4 colunas da matriz.</li>
+    <li>A combinação dos dois loops permite visitar cada posição da matriz.</li>
+    <li>A cada iteração é lido um número e verificado se é par para atualizar soma e contagem.</li>
+</ul>
+
+<h3>Etapas finais</h3>
+<ul>
+    <li>Cálculo da média usando operador condicional para evitar divisão por zero.</li>
+    <li>Exibição da soma e média dos valores pares.</li>
+    <li>Fechamento do leitor de entrada.</li>
 </ul>
 
 <hr>
 
-<h2>Ex2A - Matriz de Letras</h2>
+<h2>Exercício 2 – Criação e Exibição de Matrizes Pré-definidas</h2>
 
-<p>Código:</p>
+<h3>2A – Matriz de Letras</h3>
+<img width="197" height="202" alt="2a" src="https://github.com/user-attachments/assets/9da93486-5f93-48b9-90c3-1a6c139abb01" />
 
-<img width="197" height="202" alt="2a" src="https://github.com/user-attachments/assets/0ffe7c25-bf32-4fee-822d-b3459823703b" />
+<p>Matriz fixa contendo letras de 'a' a 't'. O programa percorre e exibe os caracteres na tela.</p>
 
-
-<h3>Explicação</h3>
+<h3>Explicação dos loops</h3>
 <ul>
-<li>A matriz é criada já preenchida com caracteres.</li>
-<li>O laço for-each percorre cada linha.</li>
-<li>O segundo for-each imprime cada caractere com espaço.</li>
-<li>System.out.println pula linha para formar a matriz visualmente.</li>
+    <li>O loop externo acessa cada linha da matriz.</li>
+    <li>O loop interno percorre cada caractere da linha atual.</li>
+    <li>Cada caractere é exibido com espaço entre eles.</li>
+</ul>
+
+<h3>2B – Matriz de Inteiros</h3>
+<p>Matriz contendo números inteiros predefinidos. O programa apenas exibe seus valores.</p>
+<img width="204" height="202" alt="2b" src="https://github.com/user-attachments/assets/1dafe92c-13e2-4710-a392-2308d339bd65" />
+
+<h3>Explicação dos loops</h3>
+<ul>
+    <li>O loop externo seleciona cada linha da matriz.</li>
+    <li>O loop interno percorre os números daquela linha.</li>
+    <li>Todos os valores são impressos mantendo o formato de matriz.</li>
+</ul>
+
+<h3>2C – Matriz de Decimais</h3>
+<p>Matriz fixa com valores decimais (double). O programa percorre e exibe seus elementos.</p>
+<img width="206" height="193" alt="2c" src="https://github.com/user-attachments/assets/2dc77d86-6e7b-459e-9bef-4975f0068983" />
+
+<h3>Explicação dos loops</h3>
+<ul>
+    <li>O loop externo percorre as linhas.</li>
+    <li>O loop interno percorre os valores da linha atual.</li>
+    <li>Os números são exibidos com separação adequada.</li>
 </ul>
 
 <hr>
 
-<h2>Ex2B - Matriz de Inteiros</h2>
+<h2>Exercício 3 – Matriz 5x5: Soma de Ímpares, Soma das Colunas e das Linhas</h2>
+<img width="305" height="397" alt="3" src="https://github.com/user-attachments/assets/6aeb6b6d-5fe9-454b-8f3e-ad4399d615bc" />
 
-<p>Código:</p>
+<h3>Objetivo</h3>
+<p>Ler uma matriz 5x5 e realizar três operações: somar os valores ímpares, calcular a soma de cada coluna e a soma de cada linha.</p>
 
-<img width="204" height="202" alt="2b" src="https://github.com/user-attachments/assets/5cc39842-c4c5-43e9-8809-c069a36b3914" />
-
-
-<h3>Explicação</h3>
-<p>Mesma lógica do Ex2A, porém com valores inteiros.</p>
-
-<hr>
-
-<h2>Ex2C - Matriz Double</h2>
-
-<p>Código:</p>
-
-<img width="206" height="193" alt="2c" src="https://github.com/user-attachments/assets/83f49069-c8cd-4ba1-92f2-a2f6318a0256" />
-
-
-<h3>Explicação</h3>
-<p>Mesmo processo, agora utilizando valores decimais.</p>
-
-<hr>
-
-<h2>Ex3 - Matriz 5x5: Soma Ímpares, Soma Colunas e Linhas</h2>
-
-<p>Código:</p>
-
-<img width="305" height="397" alt="3" src="https://github.com/user-attachments/assets/afeabc22-fbb3-4963-b2f2-7642c8f03faf" />
-
-
-<h3>Explicação</h3>
+<h3>Explicação das Linhas</h3>
 <ul>
-<li>Leitura da matriz 5x5.</li>
-<li>Soma dos números ímpares.</li>
-<li>Soma das colunas em um laço separado.</li>
-<li>Soma das linhas em outro laço.</li>
+    <li>Criação da matriz 5x5 com valores inteiros.</li>
+    <li>Declaração de variável usada para acumular a soma dos ímpares.</li>
+    <li>Leitura dos valores digitados pelo usuário.</li>
+</ul>
+
+<h3>Explicação dos loops</h3>
+
+<h4>Leitura da matriz</h4>
+<ul>
+    <li>Loop externo controla o índice da linha.</li>
+    <li>Loop interno controla o índice da coluna.</li>
+    <li>A cada leitura, o programa verifica se o valor é ímpar e soma se for.</li>
+</ul>
+
+<h4>Soma das colunas</h4>
+<ul>
+    <li>O loop externo percorre cada coluna.</li>
+    <li>Para cada coluna, o loop interno percorre as 5 linhas.</li>
+    <li>A soma é acumulada verticalmente.</li>
+</ul>
+
+<h4>Soma das linhas</h4>
+<ul>
+    <li>O loop externo percorre cada linha.</li>
+    <li>O loop interno percorre as colunas daquela linha.</li>
+    <li>A soma é acumulada horizontalmente.</li>
 </ul>
 
 <hr>
 
-<h2>Ex4 - Matriz 3x5: Repetidos, Pares e Ímpares</h2>
+<h2>Exercício 4 – Matriz 3x5: Repetidos, Pares e Ímpares</h2>
+<img width="337" height="366" alt="4" src="https://github.com/user-attachments/assets/e471aed4-776a-4686-b31e-536f42af03ed" />
 
-<p>Código:</p>
+<h3>Objetivo</h3>
+<p>Ler 15 valores e identificar se há algum repetido, além de contar quantos deles são pares e quantos são ímpares.</p>
 
-<img width="337" height="366" alt="4" src="https://github.com/user-attachments/assets/81d8a4eb-223c-4476-8bba-0b9984254fbd" />
-
-
-<h3>Explicação</h3>
+<h3>Explicação das Linhas</h3>
 <ul>
-<li>HashSet armazena valores já digitados.</li>
-<li>Se um valor já estiver no Set, repetido = true.</li>
-<li>Contagem separada de pares e ímpares.</li>
-<li>Armazenamento na matriz em cada iteração.</li>
+    <li>Criação da matriz 3x5 para armazenar os valores.</li>
+    <li>Uso de uma estrutura que armazena apenas valores únicos.</li>
+    <li>Variáveis para registrar quantos valores são pares e quantos são ímpares.</li>
+</ul>
+
+<h3>Explicação dos loops</h3>
+<ul>
+    <li>Loop externo percorre as 3 linhas.</li>
+    <li>Loop interno percorre as 5 colunas.</li>
+    <li>A cada leitura, o valor é comparado com a estrutura de valores únicos.</li>
+    <li>O programa verifica se o valor é par ou ímpar para atualizar suas contagens.</li>
 </ul>
 
 <hr>
 
-<h2>Ex5 - Diagonais da Matriz 4x4</h2>
+<h2>Exercício 5 – Matriz 4x4 de Decimais: Diagonal Principal e Secundária</h2>
+<img width="311" height="322" alt="5" src="https://github.com/user-attachments/assets/6537a50d-cf27-49e3-a82f-5f0965262b8d" />
 
-<p>Código:</p>
+<h3>Objetivo</h3>
+<p>Ler uma matriz 4x4 e exibir a diagonal principal e a diagonal secundária da matriz.</p>
 
-<img width="311" height="322" alt="5" src="https://github.com/user-attachments/assets/87b6cfd3-d160-47a2-af12-9fb8fcbe6b99" />
-
-
-<h3>Explicação</h3>
+<h3>Explicação dos loops</h3>
 <ul>
-<li>Diagonal principal pega índices iguais.</li>
-<li>Diagonal secundária pega elementos onde i + j = 3.</li>
+    <li>Os primeiros dois loops percorrem a matriz inteira lendo seus valores.</li>
+    <li>A diagonal principal é exibida utilizando apenas um loop (índice da linha igual ao da coluna).</li>
+    <li>A diagonal secundária também usa um loop, com a relação coluna = 3 - linha.</li>
 </ul>
 
 <hr>
 
-<h2>Ex6 - Figuras usando Matrizes 4x4</h2>
+<h2>Exercício 6 – Figuras com Matrizes</h2>
 
-<h3>6A - Matriz inteira com *</h3>
+<h3>6A – Matriz completamente preenchida com *</h3>
+<img width="243" height="235" alt="6a" src="https://github.com/user-attachments/assets/06b87eb0-36a7-49b5-8751-a99f70bc0921" />
 
-<img width="243" height="235" alt="6a" src="https://github.com/user-attachments/assets/4980df34-963d-4dc3-ae3b-f6e392d652b0" />
-
-
-<h3>Explicação</h3>
 <ul>
-<li>Preenche toda a matriz com *.</li>
-<li>Imprime na tela formatado.</li>
+    <li>A matriz é criada com 4 linhas e 4 colunas.</li>
+    <li>Todos os elementos recebem o símbolo escolhido.</li>
+    <li>Um segundo par de loops exibe a figura completa na tela.</li>
+</ul>
+
+<h3>Explicação dos loops</h3>
+<ul>
+    <li>Loop externo percorre cada linha.</li>
+    <li>Loop interno percorre cada coluna preenchendo com o símbolo.</li>
+    <li>Outro par de loops exibe a matriz já preenchida.</li>
+</ul>
+
+<h3>6B – Moldura de * com interior vazio</h3>
+<img width="281" height="278" alt="6b" src="https://github.com/user-attachments/assets/2b762646-a897-492e-9707-5bd565b7846f" />
+
+<ul>
+    <li>As bordas recebem o símbolo, enquanto o centro fica em branco.</li>
+    <li>Condições verificam se a posição atual pertence às bordas.</li>
+</ul>
+
+<h3>Explicação dos loops</h3>
+<ul>
+    <li>Loops percorrem todas as posições.</li>
+    <li>Se a linha for a primeira ou última, ou a coluna for a primeira ou última, recebe símbolo.</li>
+    <li>Demais posições recebem espaço em branco.</li>
+</ul>
+
+<h3>6C – Triângulo formado por *</h3>
+<img width="255" height="238" alt="6c" src="https://github.com/user-attachments/assets/deab34ef-f384-4492-92f3-cce65109010d" />
+
+<ul>
+    <li>A matriz é preenchida apenas até o limite definido pelo índice da linha.</li>
+    <li>O restante das posições fica em branco.</li>
+</ul>
+
+<h3>Explicação dos loops</h3>
+<ul>
+    <li>Loop externo percorre cada linha.</li>
+    <li>Loop interno preenche somente até a coluna igual ao índice da linha.</li>
+    <li>A exibição é feita com outro par de loops.</li>
 </ul>
 
 <hr>
 
-<h3>6B - Borda de * e centro vazio</h3>
-
-<img width="281" height="278" alt="6b" src="https://github.com/user-attachments/assets/b0178131-76c5-4268-89d9-84fa04f6b6fa" />
-
-
-<h3>Explicação</h3>
-<ul>
-<li>Borda: linha 0, linha 3, coluna 0 ou coluna 3.</li>
-<li>Centro recebe espaço em branco.</li>
-</ul>
-
-<hr>
-
-<h3>6C - Triângulo de *</h3>
-
-<img width="255" height="238" alt="6c" src="https://github.com/user-attachments/assets/3b783bda-4879-4b8d-98e7-bbc3106d94ec" />
-
-
-
-<h3>Explicação</h3>
-<ul>
-<li>A cada linha o número de asteriscos aumenta.</li>
-<li>O restante da matriz fica vazio.</li>
-<li>A condição j <= i cria o formato triangular.</li>
-</ul>
-
-<hr>
-
+e construção de figuras utilizando estruturas bidimensionais.</p>
 
