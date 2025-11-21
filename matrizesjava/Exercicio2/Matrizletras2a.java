@@ -5,8 +5,8 @@ public class Matrizletras2a {
         char[][] matriz = {
             {'a','b','c','d','e'},
             {'f','g','h','i','j'},
-            {'k','l','m','n','o'},
-            {'p','q','r','s','t'}
+            {'l','m','n','o','p'},
+            {'q','r','s','t','u'}
         };
 
         for (char[] linha : matriz) {
@@ -17,3 +17,4 @@ public class Matrizletras2a {
         }
     }
 }
+
