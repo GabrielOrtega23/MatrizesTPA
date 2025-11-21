@@ -30,6 +30,8 @@
     <li>Exibição da soma e média dos valores pares.</li>
     <li>Fechamento do leitor de entrada.</li>
 </ul>
+<p>Deploy:</p>
+<img width="175" height="176" alt="1" src="https://github.com/user-attachments/assets/1a5fa013-4615-4fa2-af6b-fab0f405d619" />
 
 <hr>
 
@@ -46,6 +48,8 @@
     <li>O loop interno percorre cada caractere da linha atual.</li>
     <li>Cada caractere é exibido com espaço entre eles.</li>
 </ul>
+<p>Deploy:</p>
+<img width="50" height="35" alt="2a" src="https://github.com/user-attachments/assets/c1126d3d-3808-4002-92b1-1b054ee0d188" />
 
 <h3>2B – Matriz de Inteiros</h3>
 <p>Matriz contendo números inteiros predefinidos. O programa apenas exibe seus valores.</p>
@@ -57,6 +61,8 @@
     <li>O loop interno percorre os números daquela linha.</li>
     <li>Todos os valores são impressos mantendo o formato de matriz.</li>
 </ul>
+<p>Deploy:</p>
+<img width="55" height="28" alt="2b" src="https://github.com/user-attachments/assets/8de5f862-85eb-4634-ae8d-8abf4eb677a1" />
 
 <h3>2C – Matriz de Decimais</h3>
 <p>Matriz fixa com valores decimais (double). O programa percorre e exibe seus elementos.</p>
@@ -68,6 +74,8 @@
     <li>O loop interno percorre os valores da linha atual.</li>
     <li>Os números são exibidos com separação adequada.</li>
 </ul>
+<p>Deploy:</p>
+<img width="63" height="30" alt="2c (2)" src="https://github.com/user-attachments/assets/0dec3e3f-06af-459d-a9a0-db9b66000ace" />
 
 <hr>
 
@@ -106,6 +114,8 @@
     <li>O loop interno percorre as colunas daquela linha.</li>
     <li>A soma é acumulada horizontalmente.</li>
 </ul>
+<p>Deploy:</p>
+<img width="185" height="381" alt="3" src="https://github.com/user-attachments/assets/03af58e3-db09-4582-8a00-5d066ec7d0da" />
 
 <hr>
 
@@ -129,6 +139,8 @@
     <li>A cada leitura, o valor é comparado com a estrutura de valores únicos.</li>
     <li>O programa verifica se o valor é par ou ímpar para atualizar suas contagens.</li>
 </ul>
+<p>Deploy:</p>
+<img width="146" height="194" alt="4" src="https://github.com/user-attachments/assets/bba43348-6fda-4f1e-aa67-dd8452dc5b15" />
 
 <hr>
 
@@ -144,6 +156,8 @@
     <li>A diagonal principal é exibida utilizando apenas um loop (índice da linha igual ao da coluna).</li>
     <li>A diagonal secundária também usa um loop, com a relação coluna = 3 - linha.</li>
 </ul>
+<p>Deploy:</p>
+<img width="178" height="208" alt="5" src="https://github.com/user-attachments/assets/a89f95f8-e5ed-4636-a5da-44acb17e6f90" />
 
 <hr>
 
@@ -164,6 +178,9 @@
     <li>Loop interno percorre cada coluna preenchendo com o símbolo.</li>
     <li>Outro par de loops exibe a matriz já preenchida.</li>
 </ul>
+<p>Deploy:</p>
+<img width="46" height="42" alt="6a" src="https://github.com/user-attachments/assets/aab75392-487c-4033-b63b-cab816dbc4fc" />
+
 
 <h3>6B – Moldura de * com interior vazio</h3>
 <img width="281" height="278" alt="6b" src="https://github.com/user-attachments/assets/2b762646-a897-492e-9707-5bd565b7846f" />
@@ -179,6 +196,9 @@
     <li>Se a linha for a primeira ou última, ou a coluna for a primeira ou última, recebe símbolo.</li>
     <li>Demais posições recebem espaço em branco.</li>
 </ul>
+<p>Deploy:</p>
+<img width="39" height="38" alt="6b" src="https://github.com/user-attachments/assets/faca1052-bbfa-44bd-8c1f-389fb0c11756" />
+
 
 <h3>6C – Triângulo formado por *</h3>
 <img width="255" height="238" alt="6c" src="https://github.com/user-attachments/assets/deab34ef-f384-4492-92f3-cce65109010d" />
@@ -194,8 +214,10 @@
     <li>Loop interno preenche somente até a coluna igual ao índice da linha.</li>
     <li>A exibição é feita com outro par de loops.</li>
 </ul>
+<p>Deploy:</p>
+<img width="42" height="40" alt="6c" src="https://github.com/user-attachments/assets/0b86ebe9-86a9-4e6d-b0e3-c09850a1e10f" />
 
 <hr>
 
-e construção de figuras utilizando estruturas bidimensionais.</p>
+
 
