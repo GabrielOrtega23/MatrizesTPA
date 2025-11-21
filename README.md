@@ -6,10 +6,11 @@
 <h2>Ex1 - Soma e Média dos Números Pares de uma Matriz 4x4</h2>
 
 <p>Código:</p>
+<img width="301" height="320" alt="1" src="https://github.com/user-attachments/assets/56f838a6-faac-4a95-be6b-1df0bfb899d2" />
 
 
 
-<h3>Explicação detalhada</h3>
+<h3>Explicação </h3>
 <ul>
 <li>Scanner sc = new Scanner(System.in): cria o leitor de entrada.</li>
 <li>int[][] matriz = new int[4][4]: cria a matriz 4x4.</li>
